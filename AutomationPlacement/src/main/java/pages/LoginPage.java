@@ -16,6 +16,8 @@ public class LoginPage
 	@FindBy(xpath="//input[@placeholder='Username']")WebElement username;
 	@FindBy(xpath="//input[@placeholder='Password']")WebElement password;
 	@FindBy(xpath="//button[@type='submit']") WebElement submit;
+	@FindBy(xpath="//a[text()='Home']") WebElement dashboard;
+	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")WebElement alert;
 	
 	public void enterUsername(String user)
 	{
@@ -30,6 +32,13 @@ public class LoginPage
 		submit.click();
 	}
 	
-	
+	public boolean isDashboardDisplayed()
+	{
+		return dashboard.isDisplayed();
+	}
+	public boolean isAlertDisplayed()
+	{
+		return alert.isDisplayed();
+	}
 	
 }

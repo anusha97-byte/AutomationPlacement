@@ -1,5 +1,6 @@
 package testScript;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
@@ -15,6 +16,8 @@ public class LoginTest extends Base
 		loginpage.enterUsername(user);
 		loginpage.enterpassword(pass);
 		loginpage.clickSignin();
+		boolean dashboarddisplay=loginpage.isDashboardDisplayed();
+		Assert.assertTrue(dashboarddisplay);
 	}
 	@Test
 	public void loginWithBothInvalidCeredentials()
@@ -25,5 +28,7 @@ public class LoginTest extends Base
 		loginpage.enterUsername(user);
 		loginpage.enterpassword(pass);
 		loginpage.clickSignin();
+		boolean alertdisplay=loginpage.isAlertDisplayed();
+		Assert.assertTrue(alertdisplay);
 	}
 }
