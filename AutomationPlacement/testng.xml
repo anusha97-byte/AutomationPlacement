@@ -3,9 +3,12 @@
 <suite name="Suite">
   <test thread-count="2" name="Test">
     <classes>
-      <class name="testScript.loginWithValidCeredentials"/>
-      <class name="testScript.loginWithBothInvalidCeredentials"/>
+      <class name="testScript.LoginTest">
+      <methods>
+      <include name="loginWithValidCeredentials"></include>
+      </methods>
       
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
