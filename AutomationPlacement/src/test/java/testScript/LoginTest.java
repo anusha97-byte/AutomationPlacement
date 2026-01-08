@@ -1,17 +1,20 @@
 package testScript;
 
+import java.io.IOException;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.LoginPage;
+import utilities.ExcelUtility;
 
 public class LoginTest extends Base
 {
 	@Test
-	public void loginWithValidCeredentials()
+	public void loginWithValidCeredentials() throws IOException
 	{
-		String user="Admin";
-		String pass="admin";
+		String user=ExcelUtility.getStringData(1, 0,"loginpage");
+		String pass=ExcelUtility.getStringData(1, 1,"loginpage");
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUsername(user);
 		loginpage.enterpassword(pass);
@@ -20,10 +23,10 @@ public class LoginTest extends Base
 		Assert.assertTrue(dashboarddisplay);
 	}
 	@Test
-	public void loginWithBothInvalidCeredentials()
+	public void loginWithBothInvalidCeredentials() throws IOException
 	{
-		String user="12443";
-		String pass="865jf";
+		String user=ExcelUtility.getStringData(2, 0, "loginpage");
+		String pass=ExcelUtility.getStringData(2, 1,"loginpage");
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.enterUsername(user);
 		loginpage.enterpassword(pass);

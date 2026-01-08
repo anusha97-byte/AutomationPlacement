@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-07T18:14:41 IST" name="Default suite" finished-at="2026-01-07T18:14:51 IST" duration-ms="10239">
+  <suite started-at="2026-01-08T11:39:28 IST" name="Default suite" finished-at="2026-01-08T11:39:39 IST" duration-ms="11131">
     <groups>
     </groups>
-    <test started-at="2026-01-07T18:14:41 IST" name="Default test" finished-at="2026-01-07T18:14:51 IST" duration-ms="10239">
+    <test started-at="2026-01-08T11:39:28 IST" name="Default test" finished-at="2026-01-08T11:39:39 IST" duration-ms="11131">
       <class name="testScript.LoginTest">
-        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testScript.LoginTest@6f1de4c7]" started-at="2026-01-07T18:14:41 IST" name="browserInitialization" finished-at="2026-01-07T18:14:49 IST" duration-ms="8135" status="PASS">
+        <test-method is-config="true" signature="browserInitialization()[pri:0, instance:testScript.LoginTest@459e9125]" started-at="2026-01-08T11:39:28 IST" name="browserInitialization" finished-at="2026-01-08T11:39:35 IST" duration-ms="6360" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="loginWithBothInvalidCeredentials()[pri:0, instance:testScript.LoginTest@6f1de4c7]" started-at="2026-01-07T18:14:49 IST" name="loginWithBothInvalidCeredentials" finished-at="2026-01-07T18:14:50 IST" duration-ms="1211" status="PASS">
+        <test-method signature="loginWithBothInvalidCeredentials()[pri:0, instance:testScript.LoginTest@459e9125]" started-at="2026-01-08T11:39:35 IST" name="loginWithBothInvalidCeredentials" finished-at="2026-01-08T11:39:38 IST" duration-ms="3861" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginWithBothInvalidCeredentials -->
-        <test-method is-config="true" signature="browserQuit()[pri:0, instance:testScript.LoginTest@6f1de4c7]" started-at="2026-01-07T18:14:50 IST" name="browserQuit" finished-at="2026-01-07T18:14:51 IST" duration-ms="802" status="PASS">
+        <test-method is-config="true" signature="browserQuit()[pri:0, instance:testScript.LoginTest@459e9125]" started-at="2026-01-08T11:39:38 IST" name="browserQuit" finished-at="2026-01-08T11:39:39 IST" duration-ms="829" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
