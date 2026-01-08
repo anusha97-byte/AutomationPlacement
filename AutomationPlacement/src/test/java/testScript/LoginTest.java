@@ -16,7 +16,7 @@ public class LoginTest extends Base
 		loginpage.enterUsername(user);
 		loginpage.enterpassword(pass);
 		loginpage.clickSignin();
-		boolean dashboarddisplay=loginpage.isDashboardDisplayed();
+		boolean dashboarddisplay=loginpage.isDashboardDisplayedAfterLogin();
 		Assert.assertTrue(dashboarddisplay);
 	}
 	@Test
@@ -28,7 +28,7 @@ public class LoginTest extends Base
 		loginpage.enterUsername(user);
 		loginpage.enterpassword(pass);
 		loginpage.clickSignin();
-		boolean alertdisplay=loginpage.isAlertDisplayed();
+		boolean alertdisplay=loginpage.isAlertDisplayedAfterWrongCredentialsEntered();
 		Assert.assertTrue(alertdisplay);
 	}
 }

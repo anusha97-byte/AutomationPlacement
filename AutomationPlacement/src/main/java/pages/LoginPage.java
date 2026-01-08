@@ -32,11 +32,11 @@ public class LoginPage
 		submit.click();
 	}
 	
-	public boolean isDashboardDisplayed()
+	public boolean isDashboardDisplayedAfterLogin()
 	{
 		return dashboard.isDisplayed();
 	}
-	public boolean isAlertDisplayed()
+	public boolean isAlertDisplayedAfterWrongCredentialsEntered()
 	{
 		return alert.isDisplayed();
 	}
